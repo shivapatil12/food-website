@@ -1,0 +1,239 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --navbar-height:159px;
+}
+#navbar div img{
+    height: 80px;
+    width: 92px;
+    left: 10px;
+    top: 10px;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#logo{
+    height: 60px;
+    margin: 15px 10px ;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#navbar ul li{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px;
+}
+#navbar ul li a{
+    color: aliceblue;
+    display: block;
+    padding: 8px 8px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: rgb(166, 203, 203);
+    
+}
+
+#Home{
+    display: flex;
+    flex-direction:column;
+    padding: 3pxpx 200px;
+    justify-content:center ;
+    align-items: center;
+    height:545px;
+   
+    
+}
+#Home::before{
+    content: "";
+    background: url('../bg.jpg');
+    position: absolute;
+    height: 625px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.8;
+    align-items: center;
+
+}
+#Home p{
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#Home h1{
+    color: rgb(213, 220, 225);
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.h-primary{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 15px;
+    border: 2px solid white;
+    background-color: rgb(240, 87, 84);
+    color: aliceblue;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+}
+.btn:hover{
+    background-color: rgb(215, 19, 19);
+    color: black;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
+#Services{
+    margin: 25px;
+    display:flex;
+
+}
+#Services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 6px 20px;
+    border-radius: 25px;
+    background-color: rgb(211, 208, 208);
+    transition: all 0.2s ease-in-out;
+}
+#Services .box:hover{
+    border-color: var(--main-color);
+    transform: scale(1.2);
+;
+}
+
+#Services .box img{
+    height: 100px;
+    margin: auto;
+    display: block;
+    top: 25px;
+    left: 20px;
+}
+#Services .box p{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;;
+}
+
+
+#client-section{
+    height: 335px;
+
+}
+#client-section::before{
+     content: "";
+     position: absolute;
+     background: url('../bg2.jpg');
+     width: 100%;
+     height: 45%;
+     z-index: -1;
+     opacity: 0.4;
+
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.client-item{
+    padding: 34px;
+
+}
+.client-item img{
+    height: 150px;
+    width: 150px;
+}
+
+/*contact section*/
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    background: url('../cont.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    align-items: center;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 32px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 378px;
+    padding: 12px;
+    height: 10px;
+    margin: 5px;
+    border: 3px solid black;
+    border-radius: 9px;
+    font-size:1rem;
+    
+    
+}
+#contact-box form{
+    width: 25%;
+}
+
+#contact-box label{
+    border-color: aliceblue;
+    color: black;
+    justify-content: center;
+    padding-bottom: 30px;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+
+
+footer{
+    background: black;
+    color: aliceblue;
+    padding: 5px 20px;
+}
